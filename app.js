@@ -7,6 +7,8 @@ const bank = require("./assets/bank");
 const post = require('./assets/create')
 
 
+app.use(express.static(`public`));
+
 //template engine
 var handle = Handlebars.create({
     defaultLayout: 'main'
@@ -25,12 +27,17 @@ app.set('view engine', 'handlebars');
 
 app.get("/", function(req, res){
     post.findAll().then(function(posts){
-        res.render("home", {posts: posts})
+        res.render("home", {
+            posts: posts,
+            style: `home.css`
+        })
     })
 })
 
 app.get("/formulario",function(req, res){
-    res.render("formulario");
+    res.render("formulario", {
+        style: `formulario.css`
+    });
 })
 
 app.post("/add", function(req, res){
