@@ -3,6 +3,48 @@
 }
 
 
-p{
-    color: pink;
+body{
+    background-color: rgba(38, 184, 189, 0.616)
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background-color:rgb(255, 255, 255) ;
+    border: 5px solid rgb(139, 52, 139);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    -webkit-box-shadow: -10px 0px 13px -7px #5c4075, 10px 0px 13px -7px #5c4075, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #5c4075, 10px 0px 13px -7px #5c4075, 5px 5px 15px 5px rgba(0,0,0,0);
+    width: 300px;
+}
+
+.form, p{
+    font-size: 1.1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+textarea{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(139, 52, 139);
+    color: white;
+    font-size: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid rgb(139, 52, 139);
+    border-radius: 10px;
 }
